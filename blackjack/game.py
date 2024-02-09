@@ -1,5 +1,5 @@
-from deck import Deck
-from hand import Hand
+from .deck import Deck
+from .hand import Hand
 
 import sys
 
@@ -68,11 +68,11 @@ class Game:
         self.determine_winner()
 
 
-    def place_bet(self):
+    def place_bet(self, input_func=input):
         """Process the bet amount received from player."""
         while True:
             try:
-                bet = float(input(f"Place your bet ({self.MINIMUM_BET}-{self.player.balance:.2f}): $"))
+                bet = float(input_func(f"Place your bet ({self.MINIMUM_BET}-{self.player.balance:.2f}): $"))
             except ValueError:
                 print("Invalid amount.")
                 continue
