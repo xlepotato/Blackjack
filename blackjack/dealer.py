@@ -1,4 +1,4 @@
-from baseplayer import BasePlayer
+from .baseplayer import BasePlayer
 
 class Dealer(BasePlayer):
     def __init__(self):
