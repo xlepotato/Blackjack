@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class BasePlayer(ABC):
     def __init__(self):
         self.hand = None

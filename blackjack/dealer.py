@@ -1,5 +1,6 @@
 from .baseplayer import BasePlayer
 
+
 class Dealer(BasePlayer):
     def __init__(self):
         super().__init__()

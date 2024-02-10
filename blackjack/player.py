@@ -1,6 +1,5 @@
-# from baseplayer import BasePlayer
 from .baseplayer import BasePlayer
-# from .context import BasePlayer
+
 
 class Player(BasePlayer):
     def __init__(self, balance):
