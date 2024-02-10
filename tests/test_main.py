@@ -1,6 +1,7 @@
 import pytest
 from main import display_banner
 
+
 @pytest.fixture
 def mocked_player(mocker):
     return mocker.MagicMock()

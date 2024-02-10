@@ -1,6 +1,5 @@
 import pytest
-from blackjack import Deck
-from blackjack import Card
+from blackjack import Deck, Card
 
 
 @pytest.fixture

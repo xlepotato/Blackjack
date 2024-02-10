@@ -1,7 +1,5 @@
 import pytest
-from blackjack import BasePlayer
-from blackjack import Hand
-from blackjack import Card
+from blackjack import BasePlayer, Hand, Card
 
 
 class ConcretePlayer(BasePlayer):

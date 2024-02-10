@@ -1,9 +1,5 @@
 import pytest
-from blackjack import Game
-from blackjack import Player
-from blackjack import Dealer
-from blackjack import Hand
-from blackjack import Card
+from blackjack import Game, Player, Dealer, Hand, Card
 
 
 # Define test fixtures
