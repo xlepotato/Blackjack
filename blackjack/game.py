@@ -27,7 +27,7 @@ class Game:
                 sys.exit(f"You left the game with ${self.player.balance:.2f}.")
             self.start_round()
             self.reset_round()
-            print("\n\n")
+            print("\n")
         # Player ran out of money
         else:
             print("Insufficient money: Please restart the program to try again.")
@@ -116,6 +116,9 @@ class Game:
         if self.dealer.hand.compute_score() == 21:
             self.player.balance += self.bet
             print("Both you and the dealer have Blackjack, it's a tie! Your bet is returned.")
+            # Reveal the face-down card
+            self.dealer.hand.cards[1].hidden = False
+            self.display_hands(self.dealer.hand.cards[1].hidden)
             return True
         self.player.balance += self.bet * 2.5
         print(f"Blackjack! You won ${self.bet * 1.5:.2f}!")
@@ -127,13 +130,13 @@ class Game:
         while True:
             hit = self.get_player_move()
             if not hit:
+                print()
                 break
             new_card = self.deck.deal(1)[0]
             self.player.hit(new_card)
             print(f"You drew a {new_card.VALUE_NAMES[new_card.value]} of {new_card.SUIT_SYMBOLS[new_card.suit]}.")
-            self.display_hands(self.dealer.hand.cards[1].hidden)
             print()
-
+            self.display_hands(self.dealer.hand.cards[1].hidden)
             if self.player.hand.compute_score() > 21:
                 # Player bust
                 return True
@@ -152,9 +155,10 @@ class Game:
             new_card = self.deck.deal(1)[0]
             self.dealer.hit(new_card)
             print(f"Dealer hits and is dealt with a {new_card.VALUE_NAMES[new_card.value]} of {new_card.SUIT_SYMBOLS[new_card.suit]}.")
+            print()
             self.display_hands(self.dealer.hand.cards[1].hidden)
             input('Press <Enter> to continue...')
-            print("\n\n")
+            print("\n")
         if self.dealer.hand.compute_score() > 21:
             # Dealer bust
             return True
@@ -165,7 +169,6 @@ class Game:
     def get_player_move(self):
         """Get the player's move."""
         while True:
-            print()
             move = input("Move: [H]it or [S]tand\n").lower()
             if move in ["h", "hit", "s", "stand"]:
                 break
