@@ -13,11 +13,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Blackjack CLI Game</h3>
+<h2 align="center">Blackjack Game</h2>
 
   <p align="center">
-    A command-line interface (CLI) implementation of the classic casino card game Blackjack. <br />
-    It allows players to play Blackjack against a computer dealer.
+    A command-line interface (CLI) implementation of the classic casino card game, Blackjack. <br />
+    Fight against a computer dealer today and strive to get a hand closest to 21!
     <br />
     <br />
     <a href="#about-the-project"><strong>Explore the docs »</strong></a>
@@ -38,7 +38,8 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#design-choices">Design Choices</a></li>
       </ul>
     </li>
     <li>
@@ -59,14 +60,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Files and Descriptions
+### Project Structure
 
 ### `main.py`
 This file contains the main entry point of the game. It initializes the game components, such as the player, dealer, and game engine, and starts the game loop.
@@ -99,15 +96,19 @@ Defines the `Game` class, which manages the core logic of the Blackjack game. It
 Contains the `display_banner` function, which displays the ASCII art banner and game rules at the start of the game.
 
 ### `tests/`
-This directory contains the test cases for the Blackjack game.
+This directory contains the essential test cases for the Blackjack game.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Design Choices
+### Design Choices
 - **Modular Structure**: The project is structured as a Python package (`blackjack/`) with each component (player, dealer, game logic, etc.) in separate modules. This promotes code organization and reusability.
 - **Object-Oriented Design**: The game components (player, dealer, cards) are implemented as classes with well-defined responsibilities and interfaces. This allows for easy extensibility and maintenance.
 - **CLI Interface**: The game is implemented as a command-line interface, making it accessible and easy to play without the need for graphical user interfaces.
+
+<p align="center">
+<img src="https://github.com/xlepotato/Blackjack/assets/22700895/94c83b96-48a7-42b3-822a-4d50389c1054" width="350" height="350">
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,7 +179,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/xlepotato/Bl
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Harvard University, CS50p 2024](https://cs50.harvard.edu/python/2022/)
+* [Harvard University, CS50P 2024](https://cs50.harvard.edu/python/2022/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -197,5 +198,5 @@ Distributed under the MIT License. See [LICENSE](https://github.com/xlepotato/Bl
 [issues-url]: https://github.com/xlepotato/Blackjack/issues
 [license-shield]: https://img.shields.io/github/license/xlepotato/Blackjack.svg?style=for-the-badge
 [license-url]: https://github.com/xlepotato/Blackjack/blob/main/LICENSE
-[product-screenshot]: https://github.com/xlepotato/Blackjack/assets/22700895/eebe41b3-e2a8-45a9-972b-cf0e93feda62
+[product-screenshot]: https://github.com/xlepotato/Blackjack/assets/22700895/f8e46497-3d58-487c-8a01-002345424431
 
