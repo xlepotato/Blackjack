@@ -68,11 +68,11 @@ class Game:
         self.determine_winner()
 
 
-    def place_bet(self, input_func=input):
+    def place_bet(self):
         """Process the bet amount received from player."""
         while True:
             try:
-                bet = float(input_func(f"Place your bet ({self.MINIMUM_BET}-{self.player.balance:.2f}): $"))
+                bet = float(input(f"Place your bet ({self.MINIMUM_BET}-{self.player.balance:.2f}): $"))
             except ValueError:
                 print("Invalid amount.")
                 continue
