@@ -13,19 +13,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h2 align="center">Blackjack Game</h2>
+<h2 align="center">Blackjack Game ♠</h2>
 
   <p align="center">
     A command-line interface (CLI) implementation of the classic casino card game, Blackjack. <br />
-    Fight against a computer dealer today and strive to get a hand closest to 21!
+    Try your luck by fighting against a computer dealer today and strive to get a hand closest to 21!
     <br />
     <br />
     <a href="#about-the-project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/xlepotato/Blackjack/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/xlepotato/Blackjack/issues">Request Feature</a>
   </p>
 </div>
 
@@ -38,10 +35,13 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#use-case-diagram">Use Case Diagram</a></li>
+        <li><a href="#class-diagram">Class Diagram</a></li>
+        <li><a href="#activity-diagram">Activity Diagram</a></li>
         <li><a href="#project-structure">Project Structure</a></li>
-        <li><a href="#design-choices">Design Choices</a></li>
       </ul>
     </li>
+    <li><a href="#design-choices">Design Choices</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -49,7 +49,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -60,7 +59,27 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot][product-screenshot]
+<p align="center">
+<img src="https://github.com/xlepotato/Blackjack/assets/22700895/f8e46497-3d58-487c-8a01-002345424431" width="550" height="350">
+</p>
+
+### Use Case Diagram
+
+<p align="center">
+<img src="https://github.com/xlepotato/Blackjack/assets/22700895/46058c1b-d479-41d3-b3e6-5468ad846a8b" width="350" height="350">
+</p>
+
+### Class Diagram
+
+<p align="center">
+<img src="https://github.com/xlepotato/Blackjack/assets/22700895/0054410d-2ee5-4bc8-8dc8-b60c856f6c86" width="350" height="350">
+</p>
+
+### Activity Diagram
+
+<p align="center">
+<img src="https://github.com/xlepotato/Blackjack/assets/22700895/f36159b7-2fb5-48ff-8fab-b9f95fbef27d" width="350" height="350">
+</p>
 
 
 ### Project Structure
@@ -101,7 +120,7 @@ This directory contains the essential test cases for the Blackjack game.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Design Choices
+## Design Choices
 - **Modular Structure**: The project is structured as a Python package (`blackjack/`) with each component (player, dealer, game logic, etc.) in separate modules. This promotes code organization and reusability.
 - **Object-Oriented Design**: The game components (player, dealer, cards) are implemented as classes with well-defined responsibilities and interfaces. This allows for easy extensibility and maintenance.
 - **CLI Interface**: The game is implemented as a command-line interface, making it accessible and easy to play without the need for graphical user interfaces.
@@ -116,7 +135,7 @@ This directory contains the essential test cases for the Blackjack game.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 ### Installation
 
@@ -142,29 +161,10 @@ To get a local copy up and running follow these simple example steps.
 
 The video below is a walkthrough of the Blackjack CLI Game. 
 
-https://github.com/xlepotato/Blackjack/assets/22700895/1f5a76e9-0ad4-4e6d-9689-de2f48843813
+https://github.com/xlepotato/Blackjack/assets/22700895/0c8c3f3f-1ced-4f05-a980-2c6e22c07a40
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -198,5 +198,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/xlepotato/Bl
 [issues-url]: https://github.com/xlepotato/Blackjack/issues
 [license-shield]: https://img.shields.io/github/license/xlepotato/Blackjack.svg?style=for-the-badge
 [license-url]: https://github.com/xlepotato/Blackjack/blob/main/LICENSE
-[product-screenshot]: https://github.com/xlepotato/Blackjack/assets/22700895/f8e46497-3d58-487c-8a01-002345424431
 
