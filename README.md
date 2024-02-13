@@ -94,6 +94,11 @@ Contains the `display_banner` function, which displays the ASCII art welcome mes
 ### `tests/`
 This directory contains the essential test cases for the Blackjack game to execute correctly.
 
+<p align="center">
+<img src="https://github.com/xlepotato/Blackjack/assets/22700895/9be64fbb-d8b3-40db-b39d-b3e9425b6929" width="600" height="150">
+</br><i>Running test cases using pytest</i>
+</p>
+
 
 ### Technical Design
 
